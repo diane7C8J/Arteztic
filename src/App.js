@@ -5,7 +5,6 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -18,7 +17,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="">
-        NFT Art
+        ArTEZtic
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -56,6 +55,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  banner: {
+    marginLeft: '30%',
+    marginRight: '5%'
+  },
+  nolinkcolor: {
+    color: '#FFFFFF'
+  }
   
 }));
 
@@ -66,12 +72,12 @@ export default function App() {
 
   return (
     <React.Fragment>
-      <CssBaseline />
-      <AppBar position="relative">
+      <AppBar position="sticky">
         <Toolbar>
-          <img src={'../Logohome.png'} className={classes.icon} />
-          <Typography>
-            NFT Art for the Planet
+          <img src={'../Logo_Long.png'} className={classes.icon} alt=""/>
+          
+          <Typography className={classes.banner} variant="p">
+            <Link className={classes.nolinkcolor} underline="none" href="https://better-call.dev/florencenet/KT1FLcyiC1UrZTFC4BpNZwmaxNZqmhicBb2U/interact?entrypoint=createPoll" rel="noopener noreferrer" target="_blank">ArTEZtic Voting DAO &raquo;</Link>
           </Typography>
         </Toolbar>
       </AppBar>
@@ -95,7 +101,7 @@ export default function App() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
+                    image="https://source.unsplash.com/1600x900/?nature"
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
