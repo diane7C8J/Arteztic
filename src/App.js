@@ -77,7 +77,7 @@ export default function App() {
           <img src={'../Logo_Long.png'} className={classes.icon} alt=""/>
           
           <Typography className={classes.banner} variant="p">
-            <Link className={classes.nolinkcolor} underline="none" href="https://better-call.dev/florencenet/KT1FLcyiC1UrZTFC4BpNZwmaxNZqmhicBb2U/interact?entrypoint=createPoll" rel="noopener noreferrer" target="_blank">ArTEZtic Voting DAO &raquo;</Link>
+            <Link className={classes.nolinkcolor} underline="none" href="https://tezos-poll-app.vercel.app/" rel="noopener noreferrer" target="_blank">ArTEZtic Voting DAO &raquo;</Link>
           </Typography>
         </Toolbar>
       </AppBar>
